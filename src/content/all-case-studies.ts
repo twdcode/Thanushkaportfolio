@@ -21,7 +21,7 @@ export const allCaseStudies = [
     },
     "overview": {
       "challenge": "Post-COVID healthcare demands surged, but Revenue Cycle Management (RCM) teams were drowning in legacy manual workflows handling thousands of denied claims. High-value claims were often lost in the noise, leading to revenue leakage and analyst burnout.",
-      "solution": "I architected an AI-powered automation suite that acts as an intelligent co-pilot, prioritizing work based on revenue impact rather than date received, with automated categorization and predictive denial prevention.",
+      "solution":"I architected an AI-powered automation suite that acts as an intelligent co-pilot, prioritizing work based on revenue impact rather than date received, with automated categorization and predictive denial prevention.",
       "impact": [
         "65% – Reduction in manual claim review time",
         "40% – Increase in successful claim recoveries",

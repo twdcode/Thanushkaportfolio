@@ -35,6 +35,8 @@ export function JournalSection({ heading, articles }: JournalSectionProps) {
             <div className="text-xs text-gray-500 font-mono">{article.readTime}</div>
             <a
               href={article.link}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-6 py-3 border border-white/20 rounded-full text-[10px] font-bold uppercase tracking-widest group-hover:bg-white group-hover:text-black transition-all"
             >
               Read Insight

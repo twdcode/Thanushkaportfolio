@@ -9,7 +9,7 @@ export const portfolioContent = {
     "links": [
       { "label": "Work", "href": "#/" },
       { "label": "About", "href": "#/about" },
-      { "label": "Resume", "href": "/assets/resume.pdf", "external": true }
+      { "label": "Preview Resume", "href": "/assets/resume.pdf", "external": true }
     ]
   },
   "hero": {
@@ -78,30 +78,30 @@ export const portfolioContent = {
     "articles": [
       {
         "category": "AI Design Sprint",
-        "title": "Building Two Dashboards in One Week",
+        "title": "Two Dashboards, One Week: How AI Became Our Design Partner",
         "description": "Proving that human expertise and AI can accelerate the strategic design process.",
         "readTime": "03 min read",
-        "link": "#"
+        "link": "https://medium.com/@thanushka/the-end-of-traditional-ux-building-demo-ready-dashboards-in-one-week-with-ai-co-pilots-686cb44c6ae1?postPublishedType=repub"
       },
       {
         "category": "User Psychology",
         "title": "Mastering Engagement: The Hooked Model",
         "description": "A deep dive into habit formation and responsible product engagement.",
         "readTime": "05 min read",
-        "link": "#"
+        "link": "https://medium.com/@thanushka/mastering-the-art-of-user-engagement-key-takeaways-from-hooked-12310e1fff9b"
       },
       {
         "category": "Case Study",
         "title": "From Chaos to Calm: RDMNS App Journey",
         "description": "How a user-centric approach transformed Sri Lanka's train travel experience.",
         "readTime": "06 min read",
-        "link": "#"
+        "link": "https://medium.com/fution-ux/from-chaos-to-calm-a-ux-look-at-the-official-network-of-railway-passengers-rdmns-app-2f11ba4433bf"
       }
     ]
   },
   "social": {
-    "linkedin": "#",
-    "github": "#",
-    "twitter": "#"
+    "linkedin": "https://www.linkedin.com/in/thanushka-wickramasinghe/",
+    "medium": "https://medium.com/@thanushka",
+    "twitter": "https://x.com/wicky_ux"
   }
 };
