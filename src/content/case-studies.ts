@@ -22,20 +22,22 @@ export const caseStudiesData = {
       }
     },
     {
-      "id": "ai-prediction",
-      "slug": "ai-powered-denial-prediction",
+      // ✅ UPDATED: Matching the ID from your detail file
+      "id": "design-system-migration", 
+      "slug": "design-system-migration", 
       "featured": false,
       "layout": "small",
-      "tags": ["RCM", "AI"],
-      "title": "AI-Powered Denial Prediction",
-      "shortDescription": "Proactive assistant providing real-time fixes to prevent denials before submission.",
+      "tags": ["Design Ops", "Tokens"], // Updated tags
+      "title": "Orchestrating Scale", // Updated title
+      "shortDescription": "Migrating from static styles to semantic variables to enable AI-driven workflows.",
       "image": {
-        "url": "https://placehold.co/600x450/0a0a0a/7000FF?text=AI+Prediction+Fix",
-        "alt": "AI Prediction Interface"
+        "url": "https://placehold.co/600x450/0a0a0a/00F0FF?text=Design+System+Migration",
+        "alt": "Design System Token Architecture"
       },
       "cta": {
-        "text": "Exploration",
-        "link": "#/case-study/ai-prediction"
+        "text": "Case Study",
+        // ✅ CRITICAL FIX: This link now points to the correct new page
+        "link": "#/case-study/design-system-migration" 
       }
     },
     {

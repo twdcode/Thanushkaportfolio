@@ -136,101 +136,136 @@ export const allCaseStudies = [
       }
     ],
     "nextProject": {
-      "title": "AI-Powered Denial Prediction",
-      "slug": "ai-prediction"
+      "title": "Orchestrating Scale",
+      "slug": "design-system-migration"
     }
   },
   {
-    "slug": "ai-prediction",
-    "id": "ai-prediction",
-    "title": "AI-Powered Denial Prediction",
-    "subtitle": "Preventing Revenue Loss Before It Happens",
-    "topic": "Predictive Analytics Dashboard",
-    "client": "Healthcare RCM Provider",
-    "role": "Lead UX Designer",
-    "duration": "March 2024 - August 2024",
-    "year": "2024",
-    "tags": ["RCM", "AI", "Predictive Analytics", "Healthcare"],
-    "executiveSummary": "Built a proactive assistant that provides real-time fixes to prevent denials before claim submission. The system analyzes patterns and suggests corrections, reducing denial rates by 35%.",
+    "slug": "design-system-migration",
+    "id": "design-system-migration",
+    "title": "Orchestrating Scale: Migrating a Legacy System to Tokenized Architecture",
+    "subtitle": "Leading the strategic transition from static Figma styles to semantic variables to enable AI-driven development.",
+    "topic": "Design Systems & Operations",
+    "client": "[Your Company Name]",
+    "role": "Lead Product Designer / Design Ops Lead",
+    "duration": "Ongoing (Current Initiative)",
+    "year": "2026",
+    "tags": ["Design Strategy", "Design Tokens", "Team Leadership", "AI Workflows", "Scalability"],
+    "executiveSummary": "Our existing design system relied on static Figma styles, creating a disconnect between design and development. I am leading the initiative to migrate to a 'Variable/Token-based' architecture, redefining our primitive and semantic layers to prepare for an automated, AI-assisted handoff workflow using tools like Antigravity and Cursor.",
     "hero": {
-      "image": "https://placehold.co/1200x600/0a0a0a/7000FF?text=AI+Prediction+Dashboard",
-      "alt": "AI-Powered Denial Prediction Dashboard"
+      "image": "https://placehold.co/1200x600/0a0a0a/00F0FF?text=Design+System+Migration",
+      "alt": "Design System Migration and Token Architecture"
     },
     "overview": {
-      "challenge": "Healthcare providers were reactive, only addressing denials after they occurred. This resulted in significant revenue loss and wasted administrative resources.",
-      "solution": "I designed a predictive AI system that analyzes claim data before submission, identifying potential denial triggers and suggesting corrections in real-time.",
+      "challenge": "Our existing design system relied on static Figma styles rather than tokens, leading to a disconnect between design and development. With only a fraction of components built in code and no semantic logic, the system was becoming a bottleneck for our rapid scaling requirements.",
+      "solution": "I am leading the initiative to migrate our 'Style-based' system to a 'Variable/Token-based' architecture. This involves redefining our primitive and semantic layers to prepare for an automated, AI-assisted handoff workflow.",
       "impact": [
-        "35% – Reduction in claim denial rates",
-        "50% – Decrease in re-submission work",
-        "85% – Prediction accuracy rate",
-        "$2M – Annual revenue protected from denials"
+        "100% – Semantic alignment (In Progress)",
+        "50% – Projected reduction in handoff time",
+        "0 to 1 – First AI direct-to-code workflow",
+        "Scalable – Single source of truth established"
       ]
     },
     "sections": [
       {
         "type": "outcomes",
-        "heading": "Impact Metrics",
+        "heading": "Impact Metrics (Projected/Early Wins)",
         "metrics": [
           {
-            "value": "35%",
-            "label": "Denial Reduction",
-            "description": "Reduction in claim denial rates"
+            "value": "100%",
+            "label": "Semantic Alignment",
+            "description": "Converting all global color and typography themes to semantic variables"
           },
           {
             "value": "50%",
-            "label": "Rework Saved",
-            "description": "Decrease in re-submission work"
+            "label": "Faster Handoff",
+            "description": "Projected reduction in dev time by utilizing AI to auto-generate component code"
           },
           {
-            "value": "85%",
-            "label": "Accuracy",
-            "description": "Prediction accuracy rate"
+            "value": "0 to 1",
+            "label": "AI Workflow",
+            "description": "Pioneering the team’s first direct-to-code workflow using Cursor/Antigravity"
           },
           {
-            "value": "$2M",
-            "label": "Revenue Protected",
-            "description": "Annual revenue protected from denials"
+            "value": "Scale",
+            "label": "Source of Truth",
+            "description": "Establishing a system that supports multi-theme scaling"
           }
         ]
       },
       {
-        "type": "text",
-        "heading": "The Challenge",
-        "content": "Healthcare organizations were stuck in a reactive cycle of submitting claims, receiving denials, and spending valuable resources on appeals and resubmissions. This approach was costly, time-consuming, and preventable."
+        "type": "business-challenge",
+        "heading": "The Strategic Foundation",
+        "context": "When I joined, the design system existed but was fragmented. It relied on visual consistency (Styles) rather than logic (Tokens). While I initially scaled existing components to meet immediate needs, it became clear that the current foundation could not support our future growth.",
+        "businessRisk": "Technical Debt & Velocity: Continuing with static styles meant linear growth—every new theme or product update required manual reconstruction. This threatened to slow down feature releases and increase UI inconsistency across the platform.",
+        "goalStatement": "To transform our visual library into a programmable system that acts as an API for design, enabling automated implementation and consistent scaling across products."
       },
       {
-        "type": "text",
-        "heading": "The Solution",
-        "content": "I designed an intelligent prediction engine that learns from historical denial patterns and flags potential issues before claims are submitted. The system provides clear, actionable recommendations that empower billing teams to fix problems proactively."
-      },
-      {
-        "type": "image",
-        "url": "https://placehold.co/1000x600/0a0a0a/7000FF?text=Prediction+Interface",
-        "alt": "Prediction interface showing real-time suggestions",
-        "caption": "Real-time prediction interface with actionable recommendations"
-      },
-      {
-        "type": "two-column",
-        "columns": [
+        "type": "team-leadership",
+        "heading": "Leadership & Team Orchestration",
+        "myRole": "Lead Product Designer / Design Ops Lead – I act as the bridge between design ambition and technical feasibility. My focus is not just on 'drawing' components, but on architecting the logic behind them and defining the roadmap for migration.",
+        "squad": [
           {
-            "heading": "Key Features",
-            "items": [
-              "Real-time claim analysis",
-              "Pattern recognition from historical data",
-              "Actionable fix suggestions",
-              "Confidence scoring for predictions"
-            ]
+            "role": "Engineering Lead",
+            "description": "Collaborating to map variables to code"
           },
           {
-            "heading": "User Benefits",
-            "items": [
-              "Prevent denials before submission",
-              "Reduce manual review time",
-              "Increase clean claim rates",
-              "Improve revenue cycle efficiency"
-            ]
+            "role": "Design Team",
+            "description": "Adopting token-based thinking over purely visual design"
+          }
+        ],
+        "cultureTransformation": "I am shifting the team's mindset from 'Designing Pages' to 'Designing Systems.' This involves mentoring the team on the importance of semantic naming conventions and preparing them for a future where AI handles the execution details."
+      },
+      {
+        "type": "research-findings",
+        "heading": "Critical Discovery Findings",
+        "methodology": "We conducted an audit of the current component library against developer codebases to identify gaps. We are currently testing the new variable structure by converting the 'Main Theme' first.",
+        "findings": [
+          {
+            "title": "Visuals vs. Logic",
+            "description": "Developers were guessing hex codes because our styles lacked semantic names (e.g., using 'Blue' instead of 'Primary-Action').",
+            "strategicShift": "We must move from a Library of Pictures to a Database of Decisions."
+          },
+          {
+            "title": "The AI Opportunity",
+            "description": "Static styles cannot be easily read by AI coding tools; Variables are essential for leveraging tools like Cursor effectively.",
+            "strategicShift": "Structure Figma data specifically to be machine-readable."
           }
         ]
+      },
+      {
+        "type": "design-decisions",
+        "heading": "The Redesigned Experience",
+        "solutionOverview": "The new system utilizes Figma Variables to handle theming, spacing, and radius logic, serving as the blueprint for our AI-assisted development pipeline.",
+        "decisions": [
+          {
+            "title": "Key Decision 01: Semantic Variables over Styles",
+            "context": "The old system used raw values (e.g., Hex Codes), making updates painful.",
+            "decision": "We introduced a semantic layer (e.g., Surface/Default, Text/Subdued) to decouple the design intent from the raw value, allowing for instant theming updates.",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=Semantic+Variables+Structure",
+            "imageAlt": "Diagram showing the shift from styles to semantic variables"
+          },
+          {
+            "title": "Key Decision 02: AI-Ready Component Architecture",
+            "context": "Developers spent hours manually coding UI components.",
+            "decision": "We are structuring Figma components specifically to be readable by AI tools (Antigravity/Cursor), aiming to automate the 'Figma to React' build process.",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=AI+Component+Architecture",
+            "imageAlt": "Architecture of AI-ready components"
+          },
+          {
+            "title": "Key Decision 03: Incremental Migration Strategy",
+            "context": "We cannot stop product work to rebuild the system entirely.",
+            "decision": "We adopted a 'Main Theme First' approach, converting core foundations (Colors/Type) to variables while maintaining legacy components, ensuring product velocity isn't hampered.",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=Migration+Strategy+Map",
+            "imageAlt": "Visual map of the incremental migration strategy"
+          }
+        ]
+      },
+      {
+        "type": "reflection",
+        "heading": "Leadership Evolution & Retrospective",
+        "strategicLearning": "I learned that a Design System is a product, not a project. It requires a roadmap, stakeholders, and constant iteration. The move to variables wasn't just a Figma update; it was a workflow overhaul.",
+        "leadershipGrowth": "This initiative has transitioned my role from an Individual Contributor executing designs to a Technical Leader defining how our digital products are built and delivered. I am now advocating for System Health alongside Feature Velocity."
       }
     ],
     "nextProject": {
@@ -238,7 +273,7 @@ export const allCaseStudies = [
       "slug": "client-onboarding"
     }
   },
- {
+  {
     "slug": "client-onboarding",
     "id": "client-onboarding",
     "title": "Streamlining Client Onboarding and Access Management with ONE HRC 1.1",
