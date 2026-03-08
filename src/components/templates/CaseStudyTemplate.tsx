@@ -100,13 +100,19 @@ export function CaseStudyTemplate({
   navigation,
   social,
 }: CaseStudyTemplateProps) {
+  const buildInlineFallback = (label: string, width = 1200, height = 600) => {
+    const safeLabel = label.replace(/[<>&]/g, '');
+    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="100%" height="100%" fill="#0a0a0a"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#00F0FF" font-family="Inter, Arial, sans-serif" font-size="42">${safeLabel}</text></svg>`;
+    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+  };
+
   const getFallbackImage = (src?: string | null) => {
-    if (!src) return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Image+Unavailable';
-    if (src.includes('da-01-cover.webp')) return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Denial+Automation+Suite';
-    if (src.includes('da-02-d1.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=Progressive+Disclosure+UI';
-    if (src.includes('da-03-d2.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=Smart+Prioritization+Queue';
-    if (src.includes('da-04-d3.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=AI+Auto-Categorization';
-    return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Image+Unavailable';
+    if (!src) return buildInlineFallback('Image Unavailable');
+    if (src.includes('da-01-cover.webp')) return buildInlineFallback('Denial Automation Suite');
+    if (src.includes('da-02-d1.webp')) return buildInlineFallback('Progressive Disclosure UI', 1000, 600);
+    if (src.includes('da-03-d2.webp')) return buildInlineFallback('Smart Prioritization Queue', 1000, 600);
+    if (src.includes('da-04-d3.webp')) return buildInlineFallback('AI Auto-Categorization', 1000, 600);
+    return buildInlineFallback('Image Unavailable');
   };
 
   const handleImageError: React.ReactEventHandler<HTMLImageElement> = (event) => {
