@@ -2,7 +2,7 @@ export const caseStudiesData = {
   "caseStudies": [
     {
       "id": "denial-automation",
-      "slug": "denial-automation",
+      "slug": "denial-automation-suite",
       "featured": true,
       "layout": "large",
       "tags": ["RCM", "AI Automation"],
@@ -22,12 +22,13 @@ export const caseStudiesData = {
       }
     },
     {
-      "id": "design-system-migration",
-      "slug": "design-system-migration",
+      // ✅ UPDATED: Matching the ID from your detail file
+      "id": "design-system-migration", 
+      "slug": "design-system-migration", 
       "featured": false,
       "layout": "small",
-      "tags": ["Design Ops", "Tokens"],
-      "title": "Orchestrating Scale",
+      "tags": ["Design Ops", "Tokens"], // Updated tags
+      "title": "Orchestrating Scale", // Updated title
       "shortDescription": "Migrating from static styles to semantic variables to enable AI-driven workflows.",
       "image": {
         "url": "https://placehold.co/600x450/0a0a0a/00F0FF?text=Design+System+Migration",
@@ -35,12 +36,13 @@ export const caseStudiesData = {
       },
       "cta": {
         "text": "Case Study",
-        "link": "#/case-study/design-system-migration"
+        // ✅ CRITICAL FIX: This link now points to the correct new page
+        "link": "#/case-study/design-system-migration" 
       }
     },
     {
       "id": "client-onboarding",
-      "slug": "client-onboarding",
+      "slug": "automating-client-onboarding",
       "featured": false,
       "layout": "small",
       "tags": ["Automation", "Enterprise"],

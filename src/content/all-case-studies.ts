@@ -16,7 +16,7 @@ export const allCaseStudies = [
     "tags": ["RCM", "AI Automation", "Dashboard Design", "Healthcare", "Leadership"],
     "executiveSummary": "Following my joining in June 2024, I identified that manual denial resolution was costing the client millions in unrecovered revenue. Analysts were overwhelmed by high-volume claims, leading to preventable write-offs. I architected an AI-driven automation suite that transformed the team from \"data entry\" to \"revenue strategy.\"",
     "hero": {
-      "image": "public/assets/images/case-studies/denial-automation/da-01-cover.webp",
+      "image": "https://placehold.co/1200x600/0a0a0a/00F0FF?text=Denial+Automation+Suite",
       "alt": "Denial Automation Suite Dashboard Overview"
     },
     "overview": {
@@ -109,21 +109,21 @@ export const allCaseStudies = [
             "title": "Key Design Decision 01: Clarity over Complexity",
             "context": "RCM data is dense and overwhelming.",
             "decision": "I utilized Progressive Disclosure to hide 80% of the data initially, showing only the actionable fields required to make a decision.",
-            "imageUrl": "/assets/images/denial-automation/da-02-d1.webp",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=Progressive+Disclosure+UI",
             "imageAlt": "Dashboard showing progressive disclosure design"
           },
           {
             "title": "Key Design Decision 02: Actionable Intelligence First",
             "context": "Analysts didn't know which claim to pick next.",
             "decision": "Created a \"Smart Prioritization\" queue that ranks claims by Revenue Value and Expiry Date, removing the cognitive load of choice.",
-            "imageUrl": "/assets/images/denial-automation/da-03-d2.webp",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=Smart+Prioritization+Queue",
             "imageAlt": "Smart prioritization queue interface"
           },
           {
             "title": "Key Design Decision 03: Automated Categorization",
             "context": "Manual tagging was error-prone and inconsistent.",
             "decision": "Implemented AI pattern recognition to auto-tag denials (e.g., \"Coding Error,\" \"Eligibility\"), standardizing data for future reporting.",
-            "imageUrl": "/assets/images/denial-automation/da-04-d3.webp",
+            "imageUrl": "https://placehold.co/1000x600/0a0a0a/00F0FF?text=AI+Auto-Categorization",
             "imageAlt": "AI-powered automatic categorization system"
           }
         ]
