@@ -3,14 +3,39 @@ import React, { useState } from 'react'
 const ERROR_IMG_SRC =
   'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODgiIGhlaWdodD0iODgiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgc3Ryb2tlPSIjMDAwIiBzdHJva2UtbGluZWpvaW49InJvdW5kIiBvcGFjaXR5PSIuMyIgZmlsbD0ibm9uZSIgc3Ryb2tlLXdpZHRoPSIzLjciPjxyZWN0IHg9IjE2IiB5PSIxNiIgd2lkdGg9IjU2IiBoZWlnaHQ9IjU2IiByeD0iNiIvPjxwYXRoIGQ9Im0xNiA1OCAxNi0xOCAzMiAzMiIvPjxjaXJjbGUgY3g9IjUzIiBjeT0iMzUiIHI9IjciLz48L3N2Zz4KCg=='
 
-export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElement>) {
+interface ImageWithFallbackProps extends React.ImgHTMLAttributes<HTMLImageElement> {
+  'data-min-width'?: number
+  'data-min-height'?: number
+}
+
+export function ImageWithFallback(props: ImageWithFallbackProps) {
   const [didError, setDidError] = useState(false)
+
+  const {
+    src,
+    alt,
+    style,
+    className,
+    onLoad,
+    ...rest
+  } = props
+
+  const minWidth = Number(props['data-min-width'] ?? 2)
+  const minHeight = Number(props['data-min-height'] ?? 2)
 
   const handleError = () => {
     setDidError(true)
   }
 
-  const { src, alt, style, className, ...rest } = props
+  const handleLoad: React.ReactEventHandler<HTMLImageElement> = (event) => {
+    const img = event.currentTarget
+    if (img.naturalWidth <= minWidth || img.naturalHeight <= minHeight) {
+      setDidError(true)
+      return
+    }
+
+    onLoad?.(event)
+  }
 
   return didError ? (
     <div
@@ -22,6 +47,14 @@ export function ImageWithFallback(props: React.ImgHTMLAttributes<HTMLImageElemen
       </div>
     </div>
   ) : (
-    <img src={src} alt={alt} className={className} style={style} {...rest} onError={handleError} />
+    <img
+      src={src}
+      alt={alt}
+      className={className}
+      style={style}
+      {...rest}
+      onError={handleError}
+      onLoad={handleLoad}
+    />
   )
 }
