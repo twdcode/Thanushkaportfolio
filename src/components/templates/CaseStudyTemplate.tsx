@@ -100,6 +100,24 @@ export function CaseStudyTemplate({
   navigation,
   social,
 }: CaseStudyTemplateProps) {
+  const getFallbackImage = (src?: string | null) => {
+    if (!src) return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Image+Unavailable';
+    if (src.includes('da-01-cover.webp')) return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Denial+Automation+Suite';
+    if (src.includes('da-02-d1.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=Progressive+Disclosure+UI';
+    if (src.includes('da-03-d2.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=Smart+Prioritization+Queue';
+    if (src.includes('da-04-d3.webp')) return 'https://placehold.co/1000x600/0a0a0a/00F0FF?text=AI+Auto-Categorization';
+    return 'https://placehold.co/1200x600/0a0a0a/00F0FF?text=Image+Unavailable';
+  };
+
+  const handleImageError: React.ReactEventHandler<HTMLImageElement> = (event) => {
+    const img = event.currentTarget;
+    const original = img.getAttribute('data-original-src') || img.getAttribute('src') || '';
+    const fallback = getFallbackImage(original);
+    if (img.src !== fallback) {
+      img.src = fallback;
+    }
+  };
+
   return (
     <div className="min-h-screen">
       <AmbientOrbs />
@@ -187,8 +205,10 @@ export function CaseStudyTemplate({
           <div className="aspect-video bg-white/5 rounded-3xl overflow-hidden border border-white/10">
             <img
               src={caseStudy.hero.image}
+              data-original-src={caseStudy.hero.image}
               alt={caseStudy.hero.alt}
               className="w-full h-full object-cover"
+              onError={handleImageError}
             />
           </div>
         </div>
@@ -248,8 +268,10 @@ export function CaseStudyTemplate({
                   <div className="rounded-3xl overflow-hidden border border-white/10 bg-white/5">
                     <img
                       src={section.url}
+                      data-original-src={section.url}
                       alt={section.alt}
-                      className="w-full h-auto"
+                      className="w-full h-auto object-cover"
+                      onError={handleImageError}
                     />
                   </div>
                   {section.caption && (
@@ -451,8 +473,10 @@ export function CaseStudyTemplate({
                             <div className="mt-6 rounded-2xl overflow-hidden border border-white/10">
                               <img
                                 src={decision.imageUrl}
+                                data-original-src={decision.imageUrl}
                                 alt={decision.imageAlt}
-                                className="w-full h-auto"
+                                className="w-full h-auto object-cover"
+                                onError={handleImageError}
                               />
                             </div>
                           )}

@@ -2,7 +2,7 @@ export const caseStudiesData = {
   "caseStudies": [
     {
       "id": "denial-automation",
-      "slug": "denial-automation-suite",
+      "slug": "denial-automation",
       "featured": true,
       "layout": "large",
       "tags": ["RCM", "AI Automation"],
@@ -13,7 +13,7 @@ export const caseStudiesData = {
         "Proactive Pattern Recognition"
       ],
       "image": {
-        "url": "https://placehold.co/800x600/0a0a0a/00F0FF?text=Denial+Automation+Suite",
+        "url": "/assets/images/case-studies/denial-automation/da-01-cover.webp",
         "alt": "Denial Automation Suite Dashboard"
       },
       "cta": {
@@ -22,13 +22,12 @@ export const caseStudiesData = {
       }
     },
     {
-      // ✅ UPDATED: Matching the ID from your detail file
-      "id": "design-system-migration", 
-      "slug": "design-system-migration", 
+      "id": "design-system-migration",
+      "slug": "design-system-migration",
       "featured": false,
       "layout": "small",
-      "tags": ["Design Ops", "Tokens"], // Updated tags
-      "title": "Orchestrating Scale", // Updated title
+      "tags": ["Design Ops", "Tokens"],
+      "title": "Orchestrating Scale",
       "shortDescription": "Migrating from static styles to semantic variables to enable AI-driven workflows.",
       "image": {
         "url": "https://placehold.co/600x450/0a0a0a/00F0FF?text=Design+System+Migration",
@@ -36,13 +35,12 @@ export const caseStudiesData = {
       },
       "cta": {
         "text": "Case Study",
-        // ✅ CRITICAL FIX: This link now points to the correct new page
-        "link": "#/case-study/design-system-migration" 
+        "link": "#/case-study/design-system-migration"
       }
     },
     {
       "id": "client-onboarding",
-      "slug": "automating-client-onboarding",
+      "slug": "client-onboarding",
       "featured": false,
       "layout": "small",
       "tags": ["Automation", "Enterprise"],
