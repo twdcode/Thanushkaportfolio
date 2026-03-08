@@ -16,7 +16,7 @@ export const allCaseStudies = [
     "tags": ["RCM", "AI Automation", "Dashboard Design", "Healthcare", "Leadership"],
     "executiveSummary": "Following my joining in June 2024, I identified that manual denial resolution was costing the client millions in unrecovered revenue. Analysts were overwhelmed by high-volume claims, leading to preventable write-offs. I architected an AI-driven automation suite that transformed the team from \"data entry\" to \"revenue strategy.\"",
     "hero": {
-      "image": "src/assets/images/case-studies/denial-automation/da-01-cover.webp.webp",
+      "image": "/assets/images/case-studies/denial-automation/da-01-cover.webp",
       "alt": "Denial Automation Suite Dashboard Overview"
     },
     "overview": {
