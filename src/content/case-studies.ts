@@ -2,18 +2,18 @@ export const caseStudiesData = {
   "caseStudies": [
     {
       "id": "denial-automation",
-      "slug": "denial-automation",
+      "slug": "denial-automation-suite",
       "featured": true,
       "layout": "large",
       "tags": ["RCM", "AI Automation"],
       "title": "Denial Automation Suite",
-      "shortDescription": "Transforming the chaotic claims process into a seamless workflow. Designed a comprehensive dashboard to automate unrecoverable claim identification.",
+      "shortDescription": "Designed an intelligent operational workspace that automates predictable denial scenarios and prioritises claims by financial impact, reducing manual review time while improving recovery outcomes.",
       "highlights": [
-        "Accelerated Collections & Triage",
-        "Proactive Pattern Recognition"
+        "Revenue-Based Prioritisation",
+        "Automated Categorisation"
       ],
       "image": {
-        "url": "/assets/images/case-studies/denial-automation/da-01-cover.webp",
+        "url": "https://github.com/twdcode/Thanushkaportfolio/blob/main/public/assets/images/case-studies/denial-automation/da-01-hero.webp?raw=true",
         "alt": "Denial Automation Suite Dashboard"
       },
       "cta": {
@@ -22,32 +22,34 @@ export const caseStudiesData = {
       }
     },
     {
-      "id": "design-system-migration",
-      "slug": "design-system-migration",
+      // ✅ UPDATED: Matching the ID from your detail file
+      "id": "design-system-migration", 
+      "slug": "design-system-migration", 
       "featured": false,
       "layout": "small",
-      "tags": ["Design Ops", "Tokens"],
-      "title": "Orchestrating Scale",
+      "tags": ["Design Ops", "Tokens"], // Updated tags
+      "title": "Design System Migration", // Updated title
       "shortDescription": "Migrating from static styles to semantic variables to enable AI-driven workflows.",
       "image": {
-        "url": "https://placehold.co/600x450/0a0a0a/00F0FF?text=Design+System+Migration",
+        "url": "https://github.com/twdcode/Thanushkaportfolio/blob/main/public/assets/images/case-studies/design-system-migration/ds-01-hero.webp?raw=true",
         "alt": "Design System Token Architecture"
       },
       "cta": {
         "text": "Case Study",
-        "link": "#/case-study/design-system-migration"
+        // ✅ CRITICAL FIX: This link now points to the correct new page
+        "link": "#/case-study/design-system-migration" 
       }
     },
     {
       "id": "client-onboarding",
-      "slug": "client-onboarding",
+      "slug": "automating-client-onboarding",
       "featured": false,
       "layout": "small",
       "tags": ["Automation", "Enterprise"],
       "title": "Automating Client Onboarding",
-      "shortDescription": "Led the design of a digital platform transforming manual processes into seamless automation.",
+      "shortDescription": "Designed a unified self-service platform enabling 10× client capacity growth by transforming fragmented manual workflows into integrated digital onboarding operations.",
       "image": {
-        "url": "https://placehold.co/600x450/0a0a0a/00F0FF?text=Client+Onboarding",
+        "url": "https://github.com/twdcode/Thanushkaportfolio/blob/main/public/assets/images/case-studies/client-onboarding/co-01-hero.webp?raw=true",
         "alt": "Client Onboarding Platform"
       },
       "cta": {

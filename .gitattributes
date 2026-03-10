@@ -1,9 +1,0 @@
-* text=auto
-
-# Keep common binaries treated as binary to reduce merge/conflict corruption
-*.webp binary
-*.png binary
-*.jpg binary
-*.jpeg binary
-*.gif binary
-*.svg binary

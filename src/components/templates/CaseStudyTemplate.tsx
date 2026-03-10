@@ -67,7 +67,6 @@ interface CaseStudyData {
   overview: {
     challenge: string;
     solution: string;
-    impact: string[];
   };
   sections: CaseStudySection[];
   nextProject?: {
@@ -100,30 +99,6 @@ export function CaseStudyTemplate({
   navigation,
   social,
 }: CaseStudyTemplateProps) {
-  const buildInlineFallback = (label: string, width = 1200, height = 600) => {
-    const safeLabel = label.replace(/[<>&]/g, '');
-    const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}" viewBox="0 0 ${width} ${height}"><rect width="100%" height="100%" fill="#0a0a0a"/><text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#00F0FF" font-family="Inter, Arial, sans-serif" font-size="42">${safeLabel}</text></svg>`;
-    return `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
-  };
-
-  const getFallbackImage = (src?: string | null) => {
-    if (!src) return buildInlineFallback('Image Unavailable');
-    if (src.includes('da-01-cover.webp')) return buildInlineFallback('Denial Automation Suite');
-    if (src.includes('da-02-d1.webp')) return buildInlineFallback('Progressive Disclosure UI', 1000, 600);
-    if (src.includes('da-03-d2.webp')) return buildInlineFallback('Smart Prioritization Queue', 1000, 600);
-    if (src.includes('da-04-d3.webp')) return buildInlineFallback('AI Auto-Categorization', 1000, 600);
-    return buildInlineFallback('Image Unavailable');
-  };
-
-  const handleImageError: React.ReactEventHandler<HTMLImageElement> = (event) => {
-    const img = event.currentTarget;
-    const original = img.getAttribute('data-original-src') || img.getAttribute('src') || '';
-    const fallback = getFallbackImage(original);
-    if (img.src !== fallback) {
-      img.src = fallback;
-    }
-  };
-
   return (
     <div className="min-h-screen">
       <AmbientOrbs />
@@ -208,13 +183,11 @@ export function CaseStudyTemplate({
           )}
 
           {/* Hero Image */}
-          <div className="aspect-video bg-white/5 rounded-3xl overflow-hidden border border-white/10">
+          <div className="bg-white/5 rounded-3xl overflow-hidden border border-white/10">
             <img
               src={caseStudy.hero.image}
-              data-original-src={caseStudy.hero.image}
               alt={caseStudy.hero.alt}
-              className="w-full h-full object-cover"
-              onError={handleImageError}
+              className="w-full h-auto object-cover"
             />
           </div>
         </div>
@@ -239,19 +212,6 @@ export function CaseStudyTemplate({
               </p>
             </div>
           </div>
-          <div className="mt-12">
-            <h2 className="text-xs text-cyan-400 uppercase tracking-widest mb-4">
-              Impact
-            </h2>
-            <ul className="space-y-3">
-              {caseStudy.overview.impact.map((item, index) => (
-                <li key={index} className="flex items-start gap-3">
-                  <span className="text-cyan-400 mt-1">→</span>
-                  <span className="text-gray-300">{item}</span>
-                </li>
-              ))}
-            </ul>
-          </div>
         </div>
 
         {/* Dynamic Sections */}
@@ -274,10 +234,8 @@ export function CaseStudyTemplate({
                   <div className="rounded-3xl overflow-hidden border border-white/10 bg-white/5">
                     <img
                       src={section.url}
-                      data-original-src={section.url}
                       alt={section.alt}
-                      className="w-full h-auto object-cover"
-                      onError={handleImageError}
+                      className="w-full h-auto"
                     />
                   </div>
                   {section.caption && (
@@ -479,10 +437,8 @@ export function CaseStudyTemplate({
                             <div className="mt-6 rounded-2xl overflow-hidden border border-white/10">
                               <img
                                 src={decision.imageUrl}
-                                data-original-src={decision.imageUrl}
                                 alt={decision.imageAlt}
-                                className="w-full h-auto object-cover"
-                                onError={handleImageError}
+                                className="w-full h-auto"
                               />
                             </div>
                           )}

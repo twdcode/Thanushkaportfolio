@@ -53,12 +53,12 @@ export function PortfolioSection({
         {/* Featured Case Study */}
         {featuredStudy && (
           <div className="glass-card p-8 rounded-3xl group relative overflow-hidden md:col-span-2 flex flex-col md:flex-row gap-10 items-center">
-            <div className="w-full md:w-1/2 aspect-video bg-white/5 rounded-2xl overflow-hidden relative">
+            <div className="w-full md:w-1/2 bg-white/5 rounded-2xl overflow-hidden relative flex items-center justify-center">
               <div className="absolute inset-0 bg-gradient-to-tr from-cyan-500/20 to-transparent" />
               <img
                 src={featuredStudy.image.url}
                 alt={featuredStudy.image.alt}
-                className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
+                className="w-full h-auto object-contain grayscale group-hover:grayscale-0 transition-all duration-700"
               />
             </div>
             <div className="w-full md:w-1/2">

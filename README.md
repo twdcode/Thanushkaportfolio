@@ -1,7 +1,7 @@
 
-  # Template-Based Portfolio Management
+  # Thanushka Portfolio
 
-  This is a code bundle for Template-Based Portfolio Management. The original project is available at https://www.figma.com/design/yTRdReNkYScVtMo22ZOJeU/Template-Based-Portfolio-Management.
+  This is a code bundle for Thanushka Portfolio. The original project is available at https://www.figma.com/design/yTRdReNkYScVtMo22ZOJeU/Thanushka-Portfolio.
 
   ## Running the code
 
